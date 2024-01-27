@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -37,6 +38,31 @@ iframe#tela{
     position: relative;
     top: 80px;
     left: 22px;
-    width: 269px;
+    max-width: 269px;
     height: 480px;
+}
+
+section#redes-sociais{
+    padding-top: 12%;
+    padding-right: 1rem;
+    text-align: right;
+}
+
+section#redes-sociais >nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-redes{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.img-redes:hover{
+    transition: 0.4s;
+    border: 2px solid #ffffff;
+    transform: translate(-3%, -3%);
 }
